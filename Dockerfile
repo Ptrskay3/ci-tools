@@ -27,7 +27,6 @@ RUN apk --no-cache add bash=${BASH_VERSION} \
             yq-go \
             python3
 
-
 RUN curl https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz  --output - | \
     tar -xzf - -C /tmp/ \
     && mv /tmp/linux-amd64/helm /bin/ \
